@@ -1,5 +1,4 @@
 
-
 export { PollingStrategy } from "./wire/message/poll.utils.js";
 export { ConsumerKind } from "./wire/offset/offset.utils.js";
 export { Partitioning } from './wire/message/partitioning.utils.js';

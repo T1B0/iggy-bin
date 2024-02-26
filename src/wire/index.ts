@@ -1,6 +1,7 @@
 
 export * from './client/index.js';
 export * from './consumer-group/index.js';
+export * from './message/index.js';
 export * from './offset/index.js';
 export * from './partition/index.js';
 export * from './session/index.js';
