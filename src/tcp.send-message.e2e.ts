@@ -14,7 +14,7 @@ import { deleteStream } from './wire/stream/delete-stream.command.js';
 import { purgeStream } from './wire/stream/purge-stream.command.js';
 import { getOffset } from './wire/offset/get-offset.command.js';
 import { storeOffset } from './wire/offset/store-offset.command.js';
-import { HeaderValue } from './wire/message/header.type.js';
+import { HeaderValue } from './wire/message/header.utils.js';
 import { ConsumerKind } from './wire/offset/offset.utils.js';
 import { Partitioning } from './wire/message/partitioning.utils.js';
 import { PollingStrategy } from './wire/message/poll.utils.js';

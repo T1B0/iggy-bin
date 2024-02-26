@@ -54,6 +54,7 @@ import { updatePermissions } from './user/update-permissions.command.js';
 import { deleteUser } from './user/delete-user.command.js';
 import { getUsers } from './user/get-users.command.js';
 
+
 const userAPI = (c: ClientProvider) => ({
   get: getUser(c),
   list: getUsers(c),
