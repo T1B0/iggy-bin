@@ -43,19 +43,26 @@ jobs:
         with:
           path: node_modules
           key: ${{ runner.os }}-node-${{hashFiles('**/package-lock.json')}}
-    
-  build:
-    # runs-on: node:20
-    needs: install
-    steps:
-      - run: npm run build
 
-  test:
-    # runs-on: node:20
-    needs:
-      - install
-      - build
-    steps:
-      - run: npm run test
+
+      - name: Build
+        run: npm run build
+
+      - name: Test
+        run: npm run test
+
+  # build:
+  #   # runs-on: node:20
+  #   needs: install
+  #   steps:
+  #     - run: npm run build
+
+  # test:
+  #   # runs-on: node:20
+  #   needs:
+  #     - install
+  #     - build
+  #   steps:
+  #     - run: npm run test
 
   
