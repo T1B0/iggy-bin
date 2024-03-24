@@ -9,18 +9,49 @@ on: [push]
 jobs:
     
   install:
-    runs-on: node:20
+    runs-on: ubuntu-latest
     steps:
-      - run: npm ci
+      - uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          registry-url: https://registry.npmjs.org
+          cache: npm
+          node-version-file: package.json
+
+      - name: Restore npm cache
+        uses: actions/cache@v3
+        id: restore-npm-cache
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{hashFiles('**/package-lock.json')}}
+
+      - name: Install dependencies
+        run: |
+          if [ ${{ steps.restore-npm-cache.outputs.cache-hit }} = true ]
+          then
+            echo "Skipping npm ci."
+          else
+            npm ci
+          fi
+
+      - name: Cache npm dependencies
+        uses: actions/cache@v3
+        if: ${{ steps.restore-npm-cache.outputs.cache-hit }} != true
+        id: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{hashFiles('**/package-lock.json')}}
     
   build:
-    runs-on: node:20
+    # runs-on: node:20
     needs: install
     steps:
       - run: npm run build
 
   test:
-    runs-on: node:20
+    # runs-on: node:20
     needs:
       - install
       - build
