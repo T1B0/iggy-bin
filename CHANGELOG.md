@@ -1,3 +1,13 @@
+## [1.3.1](https://github.com/T1B0/iggy-bin/compare/v1.3.0...v1.3.1) (2024-07-25)
+
+
+### Bug Fixes
+
+* add e2e tests, fix create-group return ([eddff6c](https://github.com/T1B0/iggy-bin/commit/eddff6cfb4fa03847fc457e9597dfdc16cfce50d))
+* fix npm test command for ci ([c77fabf](https://github.com/T1B0/iggy-bin/commit/c77fabfb5a6303017c1365f465a1145d2fd86661))
+* fix topic deserialisation bug ([1b66321](https://github.com/T1B0/iggy-bin/commit/1b66321f69ecb383db28e4e850132280dc9fbc8e))
+* more e2e tests ([1f123a4](https://github.com/T1B0/iggy-bin/commit/1f123a472ca1256bad7301e012062328a9d43ea9))
+
 # [1.3.0](https://github.com/T1B0/iggy-bin/compare/v1.2.3...v1.3.0) (2024-07-02)
 
 
