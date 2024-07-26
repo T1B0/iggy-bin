@@ -1,7 +1,7 @@
 {
   "name": "iggy-bin",
   "type": "module",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "unofficial nodejs iggy.rs binary client",
   "keywords": [
     "iggy",

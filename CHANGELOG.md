@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/T1B0/iggy-bin/compare/v1.3.1...v1.3.2) (2024-07-26)
+
+
+### Bug Fixes
+
+* fix module type export ([22850a6](https://github.com/T1B0/iggy-bin/commit/22850a6209b9770244930e5b4e892a4d3b4a71c4))
+
 ## [1.3.1](https://github.com/T1B0/iggy-bin/compare/v1.3.0...v1.3.1) (2024-07-25)
 
 
