@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/T1B0/iggy-bin/compare/v1.3.2...v1.3.3) (2024-08-30)
+
+
+### Bug Fixes
+
+* update createUser, createStream & createTopic command return value ([bdf8fc5](https://github.com/T1B0/iggy-bin/commit/bdf8fc53ac35427f7765aa7b671b829549886803))
+
 ## [1.3.2](https://github.com/T1B0/iggy-bin/compare/v1.3.1...v1.3.2) (2024-07-26)
 
 
