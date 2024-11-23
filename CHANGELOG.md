@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/T1B0/iggy-bin/compare/v1.3.3...v1.3.4) (2024-11-23)
+
+
+### Bug Fixes
+
+* enforce check on message id to be either uuid string or 0 ([fcfb434](https://github.com/T1B0/iggy-bin/commit/fcfb4343227a37e4b6b0cba7c5bbbb02c7d9cc22))
+
 ## [1.3.3](https://github.com/T1B0/iggy-bin/compare/v1.3.2...v1.3.3) (2024-08-30)
 
 
